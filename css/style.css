@@ -1,0 +1,50 @@
+h1 {
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 300;
+	color: #FFFC40;
+}
+h3 {
+	font-family: 'Days One', sans-serif;
+	color: #B29C10;
+	padding-top: 20px;
+}
+
+.page-title {
+	font-size: 72px;
+	color: #FFFC40;
+}
+
+.float-left {
+	float: left;
+}
+
+.exec-img {
+	margin: 20px;
+}
+
+.black-bg {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.schedule {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.exec-title {
+	margin-top: 20px;
+}
+
+.container {
+	margin-top: 70px;
+}
+
+body {
+	background-image: url("../imgs/keys.jpg");
+	background-attachment: fixed;
+}
+
+nav .navbar {
+	background-color: #000;
+	position: fixed;
+	top: 0;
+}
