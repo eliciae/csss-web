@@ -1,17 +1,6 @@
-h1 {
-	font-family: 'Merriweather', sans-serif;
-	font-weight: 300;
-	color: #FFFC40;
-}
-h3 {
-	font-family: 'Days One', sans-serif;
-	color: #B29C10;
-	padding-top: 20px;
-}
-
-.page-title {
-	font-size: 72px;
-	color: #FFFC40;
+.huge {
+	font-size: 60px;
+	text-align: center;
 }
 
 .float-left {
@@ -34,17 +23,114 @@ h3 {
 	margin-top: 20px;
 }
 
-.container {
-	margin-top: 70px;
+.key-bg {
+	background-image: url("../imgs/keyboard.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
 }
 
 body {
-	background-image: url("../imgs/keys.jpg");
-	background-attachment: fixed;
+	background-color: black;
+	margin-top: 0px;
 }
 
 nav .navbar {
 	background-color: #000;
 	position: fixed;
 	top: 0;
+	font-size: 24px;
+}
+
+nav a {
+	color: #FFF;
+}
+
+nav a:hover {
+	color: #000;
+}
+
+nav a:active {
+	color: #000;
+}
+
+.social {
+	height: 40px;
+	float: right;
+	margin-top: 20px;
+	margin-left: 3px;
+}
+
+body a {
+	color: #42C5BE;
+}
+
+nav a {
+	color: #fff;
+}
+
+nav li {
+	border-top: 4px solid #42C5BE;
+}
+
+footer {
+	border-top: 2px solid white;
+	background-color: black;
+}
+
+footer .margins {
+	margin-right: 160px;
+	margin-left: 160px;
+}
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+.container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0px auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+.nav-select {
+	color: #000;
+	border-top: 4px solid #000;
+}
+
+#curpage > a {
+	color: black;
+}
+
+.padded {
+	padding: 10px 10px 10px 10px;
+}
+
+.row {
+	padding-bottom: 40px;
+}
+
+.black {
+	background-color: black;
+	padding-top: 60px;
+	width: 100%;
+}
+
+.center {
+	text-align: center;
+
+}
+
+.content {
+	margin-top: 70px;
+}
+
+.big-logo {
+	padding-top: 150px;
+	padding-bottom: 100px;
 }

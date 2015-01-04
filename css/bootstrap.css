@@ -897,9 +897,9 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.42857143;
-  color: #B29C10;
+  color: #FFF;
   background-color: #ffffff;
 }
 input,
@@ -911,12 +911,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #E2BBED;
+  color: #FFF;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #8600AD;
+  color: #000;
   text-decoration: underline;
 }
 a:focus {
@@ -1399,14 +1399,12 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1060px;
   }
 }
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .row {
   margin-left: -15px;
@@ -2063,7 +2061,6 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -2121,7 +2118,7 @@ th {
   background-color: #f9f9f9;
 }
 .table-hover > tbody > tr:hover {
-  background-color: #f5f5f5;
+  background-color: #42C5BE;
 }
 table col[class*="col-"] {
   position: static;
@@ -3225,7 +3222,7 @@ tbody.collapse.in {
   list-style: none;
   font-size: 20px;
   text-align: left;
-  background-color: #000;
+  background-color: #42C5BE;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -3249,14 +3246,14 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #E2BBED;
+  color: #FFF;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #262626;
-  background-color: #f5f5f5;
+
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -3692,7 +3689,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #000;
+  background-color: #42C5BE;
   border-color: #428bca;
 }
 .nav .nav-divider {
@@ -3860,7 +3857,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 20px;
   border: 1px solid transparent;
   z-index: 1000;
-  background-color: #000;
+  background-color: #42C5BE;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4053,6 +4050,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 20px;
   }
 }
 .navbar-form {
@@ -4886,6 +4884,7 @@ a.thumbnail.active {
 .media-heading {
   margin-top: 0;
   margin-bottom: 5px;
+  color: #42C5BE;
 }
 .media-list {
   padding-left: 0;

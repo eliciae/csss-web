@@ -2,6 +2,8 @@
 require 'header.php';
 ?>
 
+<main id="office">
+
 <p class="page-title">Contact</p>
 
 <div class="black-bg">
@@ -22,6 +24,8 @@ href="https://drive.google.com/file/d/0B0Fx5qSCv3iodk5xOWhyS0YzZ00/view?usp=shar
 <a href="https://drive.google.com/folderview?id=0B0Fx5qSCv3ioNmtuUnVIZ0owTzQ&usp=sharing" target="_blank">Click here to check out our meeting minutes</a>
 
 </div>
+
+</main>
 
 <?php
 require 'footer.php';

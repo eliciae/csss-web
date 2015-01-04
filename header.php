@@ -11,10 +11,11 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/csss.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-fixed-top" role="navigation">
-			<div class="container-fluid">
+			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -26,13 +27,18 @@
 					<a class="navbar-brand" href="index.php"><img src="imgs/white_csss_logo.png" width="57" height="20" id="logo"></a>
 				</div>
 
+				<?php
+				$url = $_SERVER['REQUEST_URI'];
+				$page = strrchr($url, '/');
+				echo '<div id='.$page.'></div>'
+				?>
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="calendar.php">Events</a></li>
-						<li><a href="execs.php">Executives</a></li>
-						<li><a href="office.php">Contact</a></li>
-						<li class="dropdown">
+						<li <?php if ($page == '/calendar.php') echo 'class="hover-bar nav-select" id="curpage"'; else echo 'class="hover-bar"' ?>><a href="calendar.php">Events</a></li>
+						<li <?php if ($page == '/execs.php') echo 'class="hover-bar nav-select" id="curpage"'; else echo 'class="hover-bar"' ?>><a href="execs.php">Executives</a></li>
+						<li <?php if ($page == '/companies.php' || $page == '/schedule.php')  echo 'class="dropdown hover-bar nav-select" id="curpage"'; else echo 'class="dropdown hover-bar"' ?>>
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Career Fair <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="companies.php">For Companies</a></li>
@@ -41,9 +47,5 @@
 						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
+			</div><!-- /.container -->
 		</nav>
-
-
-
-		<div class="container">

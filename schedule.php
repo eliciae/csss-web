@@ -2,9 +2,9 @@
 require 'header.php';
 ?>
 
-<p class="page-title">Career Fair Schedule</p>
+<h1>Career Fair Schedule</h1>
 
-<div class="schedule">
+<div class="schedule table-responsive">
 
 <?php
 
@@ -19,10 +19,10 @@ if (($handle = fopen($spreadsheet_url, "r")) !== FALSE)
 	//print the date of career fair
 	$data = fgetcsv($handle, 1000, ",");
 
-	echo "<h2>". $data[0] . "</h2>";
+	echo "<h3>". $data[0] . "</h3>";
 
 	//start the table
-	echo "<table class=\"table table-hover\"><thead><tr>";
+	echo '<table class="table table-hover"><thead><tr>';
 
 	//print the titles
 	$data = fgetcsv($handle, 1000, ",");
@@ -49,9 +49,16 @@ if (($handle = fopen($spreadsheet_url, "r")) !== FALSE)
 else
     die("Problem reading csv");
 ?>
-</table>
 
+
+</table>
 </div>
+
+<br>
+<br>
+<br>
+
+
 
 <?php
 require 'footer.php';
