@@ -2,9 +2,13 @@
 require 'header.php';
 ?>
 
-<h1>Career Fair Schedule</h1>
+<div class="event-bg">
+	<h1 class="center page-title">Career Fair Schedule</h1>
+</div>
 
-<div class="schedule table-responsive">
+
+<div class="container">
+	<div class="schedule table-responsive">
 
 <?php
 
@@ -19,7 +23,7 @@ if (($handle = fopen($spreadsheet_url, "r")) !== FALSE)
 	//print the date of career fair
 	$data = fgetcsv($handle, 1000, ",");
 
-	echo "<h3>". $data[0] . "</h3>";
+	echo "<h2>". $data[0] . "</h2>";
 
 	//start the table
 	echo '<table class="table table-hover"><thead><tr>';
@@ -57,6 +61,8 @@ else
 <br>
 <br>
 <br>
+
+</div>
 
 
 

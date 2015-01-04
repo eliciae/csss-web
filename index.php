@@ -23,7 +23,7 @@ require 'header.php';
             </div>
             <div class="media-body">
               <h4 class="media-heading">Lockers</h4>
-              The CSSS offers two sizes of lockers on the 3rd floor of Spinks for $10 or $20
+              The CSSS offers two sizes of lockers on the 3rd floor of Spinks for $10 or $20.
             </div>
           </div>
         </div>

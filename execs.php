@@ -2,7 +2,11 @@
 require 'header.php';
 ?>
 
-<p class="page-title">Executives</p>
+<div class="event-bg">
+    <h1 class="center page-title">Executives</h1>
+</div>
+
+<div class="container content">
 
 <?php
 
@@ -14,39 +18,74 @@ if(!ini_set('default_socket_timeout',    15)) echo "<!-- unable to change socket
 
 if (($handle = fopen($spreadsheet_url, "r")) !== FALSE) 
 {
+    $count = 1;
+
 	//while there is still more csv data
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
     {
         $spreadsheet_data[]=$data;
 
-        echo "<div class=black-bg>";
+        
         //ifs are so that there are no broken images or weird formatting from empty cells
-        if ($data[2] != "" || $data[2] != null)
+        if ($data[3] != null)
+            $image = $data[3];
+        else
+            $image ="";
+
+        if ($data[0] != null)
+        	$title = '<h2>'.$data[0].'</h2>';
+        else 
+            $title = "";
+
+    	if ($data[2] != null)
+            $name = '<h2 class="media-heading">'.$data[2].'</h2>';
+        else
+            $name = "";
+
+        if ($data[4] != null)
+            $bio = $data[4];
+        else
+            $bio = "";
+
+        if ($data[1] != null)
+            $got = '<h2>'.$data[1].'</h2>';
+        else
+            $got = "";
+
+
+
+        if ($count % 2 == 0)
         {
-            echo "<img class=\"exec-img float-left\" src=" . $data[2] . ">";
+            echo '<div class="row">';
         }
 
-        if ($data[0] != "" || $data[0] != null)
+        echo '
+        <div class="col-md-6">
+          <div class="media">
+            <div class="media-left">
+              <img src="'.$image.'" height="180">
+            </div>
+            <div class="media-body">
+              '.$name.$title.'
+            </div>
+          </div>
+        </div>';
+
+        if ($count % 2 == 0)
         {
-        	echo "<h3>" . $data[0] . "</h3>";
-    	}
-    	if ($data[1] != "" || $data[1] != null)
-        {
-            echo "<h1>" . $data[1] . "</h1>";
-        }
-        if ($data[3] != "" || $data[3] != null)
-        {
-            echo "<p>" . $data[3] . "</p>";
+            echo '</div>';
         }
 
-        echo "<div class=clearfix></div>";
-        echo "</div>";
+        $count++;
+
     }
     fclose($handle);
 }
 else
     die("Problem reading csv");
 ?>
+
+</div>
 
 <?php
 require 'footer.php';

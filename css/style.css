@@ -29,6 +29,17 @@
 	background-size: 100%;
 }
 
+.event-bg {
+	background-image: url("../imgs/keyboard.jpg");
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+h1 {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 64px;
+}
+
 body {
 	background-color: black;
 	margin-top: 0px;
@@ -133,4 +144,9 @@ footer, .push {
 .big-logo {
 	padding-top: 150px;
 	padding-bottom: 100px;
+}
+
+.page-title {
+	padding-top: 100px;
+	padding-bottom: 70px;
 }

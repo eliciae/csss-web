@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='http://fonts.googleapis.com/css?family=Noticia+Text|Russo+One|Merriweather:300|Cousine|Graduate|Bowlby+One+SC|PT+Mono' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Noticia+Text|Russo+One|Montserrat|Days+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Quicksand|Squada+One|Source+Code+Pro|Alegreya+Sans+SC|Roboto' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
@@ -38,10 +39,10 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li <?php if ($page == '/calendar.php') echo 'class="hover-bar nav-select" id="curpage"'; else echo 'class="hover-bar"' ?>><a href="calendar.php">Events</a></li>
 						<li <?php if ($page == '/execs.php') echo 'class="hover-bar nav-select" id="curpage"'; else echo 'class="hover-bar"' ?>><a href="execs.php">Executives</a></li>
-						<li <?php if ($page == '/companies.php' || $page == '/schedule.php')  echo 'class="dropdown hover-bar nav-select" id="curpage"'; else echo 'class="dropdown hover-bar"' ?>>
+						<li <?php if ($page == '/sponsors.php' || $page == '/schedule.php')  echo 'class="dropdown hover-bar nav-select" id="curpage"'; else echo 'class="dropdown hover-bar"' ?>>
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Career Fair <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="companies.php">For Companies</a></li>
+								<li><a href="sponsors.php">Sponsorship Packages</a></li>
 								<li><a href="schedule.php">Schedule</a></li>
 							</ul>
 						</li>
