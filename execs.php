@@ -2,7 +2,7 @@
 require 'header.php';
 ?>
 
-<div class="event-bg">
+<div class="header-bg">
     <h1 class="center page-title">Executives</h1>
 </div>
 
@@ -86,6 +86,9 @@ else
 ?>
 
 </div>
+<br>
+<br>
+<br>
 
 <?php
 require 'footer.php';

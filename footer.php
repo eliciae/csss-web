@@ -1,8 +1,8 @@
 			<div class="push"></div>
 		</div>
 		<footer>
-			<div class="margins">
-				<p style="float:left;">
+			<div class="container">
+				<p class="pull-left">
 					&copy; 2014 University of Saskatchewan Computer Science Students' Society
 					<br>
 					Email: <a href="mailto:csss-executive@usask.ca">csss-executive@usask.ca</a>
@@ -16,7 +16,6 @@
 			</div>
 			<br>
 			<br>
-
 		</footer>
 	</body>
 </html>

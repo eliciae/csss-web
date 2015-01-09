@@ -19,18 +19,18 @@ require 'header.php';
         <div class="col-md-4">
           <div class="media">
             <div class="media-left">
-              <img src="imgs/keys_small.jpg" height="64">
+              <img src="imgs/lockers.jpg" height="110">
             </div>
             <div class="media-body">
               <h4 class="media-heading">Lockers</h4>
-              The CSSS offers two sizes of lockers on the 3rd floor of Spinks for $10 or $20.
+              The CSSS offers two sizes of lockers on the 3rd floor of Spinks for $10 or $20
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="media">
             <div class="media-left">
-              <img src="imgs/keys_small.jpg" height="64">
+              <img src="imgs/office3.jpg" height="110">
             </div>
             <div class="media-body">
               <h4 class="media-heading">Memberships</h4>
@@ -41,7 +41,7 @@ require 'header.php';
         <div class="col-md-4">
           <div class="media">
             <div class="media-left">
-              <img src="imgs/keys_small.jpg" height="64">
+              <img src="imgs/textbook-shelf2.jpg" height="110">
             </div>
             <div class="media-body">
               <h4 class="media-heading">Textbooks</h4>
@@ -55,7 +55,7 @@ require 'header.php';
         <div class="col-md-4">
           <div class="media">
             <div class="media-left">
-              <img src="imgs/keys_small.jpg" height="64">
+              <img src="imgs/mega-risk.jpg" height="110">
             </div>
             <div class="media-body">
               <h4 class="media-heading">Games</h4>
@@ -66,7 +66,7 @@ require 'header.php';
         <div class="col-md-4">
           <div class="media">
             <div class="media-left">
-              <img src="imgs/keys_small.jpg" height="64">
+              <img src="imgs/lounge.jpg" height="110">
             </div>
             <div class="media-body">
               <h4 class="media-heading">Lounge</h4>
@@ -76,12 +76,12 @@ require 'header.php';
         </div>
         <div class="col-md-4">
           <div class="media">
-            <div class="media-left">
-              <img src="imgs/keys_small.jpg" height="64">
-            </div>
+            <a href="https://drive.google.com/file/d/0B0Fx5qSCv3iodk5xOWhyS0YzZ00/view?usp=sharing" target="_blank" class="media-left">
+              <img src="imgs/snacks2.jpg" height="110">
+            </a>
             <div class="media-body">
               <h4 class="media-heading">Snacks</h4>
-              We sell various snack foods and drinks from out office. Check out our <a href="https://drive.google.com/file/d/0B0Fx5qSCv3iodk5xOWhyS0YzZ00/view?usp=sharing" target="_blank">price list</a>.
+              We sell various snack foods and drinks from out office. Click the image for a price list.
             </div>
           </div>
         </div>
@@ -95,12 +95,12 @@ require 'header.php';
         </div>
         <div class="col-md-4">
           <div class="media">
-            <div class="media-left">
-              <img src="imgs/keys_small.jpg" height="64">
-            </div>
+            <a href="https://drive.google.com/folderview?id=0B0Fx5qSCv3ioNmtuUnVIZ0owTzQ&usp=sharing" target="_blank" class="media-left">
+              <img src="imgs/office-inside.jpg" height="110">
+            </a>
             <div class="media-body">
               <h4 class="media-heading">Meetings</h4>
-              The executives meet every week. Our meeting minutes can be <a href="https://drive.google.com/folderview?id=0B0Fx5qSCv3ioNmtuUnVIZ0owTzQ&usp=sharing" target="_blank">found here</a>.
+              The executives meet every week. Click the image to read our meeting minutes.
             </div>
           </div>
         </div>

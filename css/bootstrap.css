@@ -2246,7 +2246,7 @@ table th[class*="col-"] {
     margin-bottom: 15px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #dddddd;
+    border: 1px solid transparent;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -4000,6 +4000,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   width: 22px;
   height: 2px;
   border-radius: 1px;
+  background-color: #000;
 }
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
@@ -4011,6 +4012,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav {
   margin: 7.5px -15px;
+  background-color: #42C5BE;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4857,9 +4859,6 @@ a.thumbnail.active {
 }
 .media {
   margin-top: 15px;
-}
-.media:first-child {
-  margin-top: 0;
 }
 .media-right,
 .media > .pull-right {

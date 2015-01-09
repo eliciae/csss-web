@@ -2,7 +2,7 @@
 require 'header.php';
 ?>
 
-<div class="event-bg">
+<div class="header-bg">
 	<h1 class="center page-title">Career Fair Schedule</h1>
 </div>
 
