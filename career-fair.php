@@ -7,7 +7,7 @@ require 'header.php';
 </div>
 
 
-<div class="container">
+<div class="container content">
 	<div class="schedule table-responsive">
 
 <?php
@@ -40,10 +40,10 @@ if (($handle = fopen($spreadsheet_url, "r")) !== FALSE)
 	//while there is still more csv data
     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
     {
-    	echo "<tr>";
+    	echo '<tr class="'.$data[2].'">';
         foreach ($data as $info)
 		{
-        	echo "<td>" . $info . "</td>";
+        	echo '<td><a class="show-company" href="#'.strtok($data[2], ' ').'">' . $info . '</a></td>';
     	}
     	echo "</tr>";
     }
@@ -61,6 +61,45 @@ else
 <br>
 <br>
 <br>
+
+
+
+<div>
+	<?php
+
+	//get the url from the publish to web options in drive spreadsheet
+	//get it as a csv so it can be iterated through
+	$spreadsheet_url="https://docs.google.com/spreadsheet/pub?key=0AjQsTIS0nLpBdEkyQTNscVl3RGpMQlVIcnp5eHRoYWc&single=true&gid=3&output=csv";
+
+	if(!ini_set('default_socket_timeout',    15)) echo "<!-- unable to change socket timeout -->";
+
+	if (($handle = fopen($spreadsheet_url, "r")) !== FALSE) 
+	{
+
+		//while there is still more csv data
+	    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) 
+	    {
+	    	echo '<div class="company hidden" id="'.strtok($data[0], ' ').'">';
+	        
+	        echo '<h2 class="media-heading">'.$data[0].'</h2>';
+	        echo '<h4>Sponsorship Level: '.$data[1].'</h4>';
+	        echo '<img src="'.$data[3].'" height="110" class="comp-logo">';
+	        echo $data[2];
+
+
+	    	echo '</div>';
+	    }
+	    fclose($handle);
+	}
+	else
+	    die("Problem reading csv");
+	?>
+	
+
+	<br>
+	<br>
+	<br>
+</div>
 
 </div>
 

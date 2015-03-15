@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>U of S CSSS</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -37,6 +38,7 @@
 						<li <?php if ($page == '/index.php') echo 'class="hover-bar nav-select" id="curpage"'; else echo 'class="hover-bar"' ?>><a href="index.php">Home</a></li>
 						<li <?php if ($page == '/calendar.php') echo 'class="hover-bar nav-select" id="curpage"'; else echo 'class="hover-bar"' ?>><a href="calendar.php">Events</a></li>
 						<li <?php if ($page == '/execs.php') echo 'class="hover-bar nav-select" id="curpage"'; else echo 'class="hover-bar"' ?>><a href="execs.php">Executives</a></li>
+						<li <?php if ($page == '/constitution.php') echo 'class="hover-bar nav-select" id="curpage"'; else echo 'class="hover-bar"' ?>><a href="constitution.php">Constitution</a></li>
 						<li <?php if ($page == '/career-fair.php')  echo 'class="hover-bar nav-select" id="curpage"'; else echo 'class="hover-bar"' ?>><a href="career-fair.php">Career Fair</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->

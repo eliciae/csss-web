@@ -93,11 +93,20 @@ nav a:active {
 }
 
 .content a {
-	color: #2782FF;
+	color: #fff;
 }
 
 .content a:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.company a {
 	color: #42C5BE;
+}
+
+.company a:hover {
+	color: #fff;
 }
 
 nav a {
@@ -116,6 +125,14 @@ footer {
 footer .margins {
 	margin-right: 160px;
 	margin-left: 160px;
+}
+
+footer a {
+	color: #42C5BE;
+}
+
+footer a:hover {
+	color: #fff;
 }
 
 * {
@@ -174,4 +191,25 @@ footer, .push {
 .page-title {
 	padding-top: 80px;
 	padding-bottom: 50px;
+}
+
+.navbar {
+	padding-bottom: 4px;
+}
+
+.comp-logo {
+	float: left;
+	padding-right: 20px;
+}
+
+#constitution a {
+	color: #42C5BE;
+}
+
+#constitution a:hover {
+	color: lightgrey;
+}
+
+.subtitle {
+	color: lightgrey;
 }
